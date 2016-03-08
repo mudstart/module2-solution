@@ -1,0 +1,99 @@
+/********** Base styles **********/
+* {
+  font-family: Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+.content {
+	position: absolute;
+}
+
+.row {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+h1 {
+	margin: 15px;
+	font-size: 1.75em;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1.25em;
+	text-align: center;
+}
+
+.menuItem  {
+	background-color: #999;
+	border: 1px solid black;
+	margin:20px 10px;
+	width: 97.5%;
+}
+
+.menuTitle{
+	background-color: green;
+	border: 1px solid black;
+	margin-bottom: 10px;
+	padding: 0 10px;
+	width: 150px;
+	position: relative;
+	float: right;
+    right: -1px;
+	top: -1px;
+}
+
+#title1 {
+	background-color: #d99;
+}
+#title2 {
+	background-color: #b44;
+	color: white;
+}
+#title3 {
+	background-color: #ed9;
+}
+
+p {
+  clear: right;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+/********** Tablet & Desktop **********/
+@media (min-width: 768px) and (max-width: 991px) {
+	#item1 {
+		width: 47%;
+		float: left;
+	}
+	#item2 {
+		width: 47%;
+		float: right;
+	}
+	#item3 {
+		width: 97.5%;
+		clear: both;
+	}
+}
+
+
+/********** Desktop only **********/
+@media (min-width: 992px) {
+	#item1 {
+		width: 30%;
+		float: left;
+	}
+	#item2 {
+		width: 30%;
+		float: left;
+	}
+	#item3 {
+		width: 30%;
+		float: left;
+	}
+}
